@@ -4,7 +4,7 @@
         <tr>
                 <td>NAME:</td> <td><input type="text" placeholder="Enter your name"></td>
         </tr>        
-                <td>AGE:</td><td><input type="text" placeholder="Enter your age" ></td>
+                <td>AGE:</td><td><input type="number" placeholder="Enter your age" min="1" max="99" ></td>
         </tr>
         <tr>
             <td>GENDER  :
@@ -12,20 +12,48 @@
 </td><td><input type="text" placeholder="Enter your gender"></td>
         </tr>
         <tr> 
-            <td>PHONE NUMBER:</td><td><input type="text" placeholder="Enter your phone number"></td>
+            <td>PHONE NUMBER:</td><td><input type="tel" placeholder="Enter your phone number" maxlength="10"></td>
         </tr>
+            <tr>
+    <td>PET NAME:</td>
+    <td><input type="text" placeholder="Enter your pet name"></td>
+</tr>
+
+<tr>
+    <td>PET TYPE:</td>
+    <td>
+        <select>
+            <option value="">Select pet</option>
+            <option>Dog</option>
+            <option>Cat</option>
+            <option>Cow</option>
+            <option>Other</option>
+        </select>
+    </td>
+</tr>
+            <tr>
+    <td>PET PROBLEM:</td>
+    <td>
+        <textarea placeholder="Enter your pet's problem"></textarea>
+    </td>
+</tr>
         <tr>
-            <td>APPOINTMENT DATE:</td><td><input type="date"></td>
+            <td>APPOINTMENT DATE:</td><td><input type="date"  id="appointmentDate"></td>
         </tr>
-        <tr>
-            <td>
-                <input type="submit"
-            </td>
-            <td>
-                <input type="reset"
-            </td>
-        </tr>
+       <tr>
+    <td>
+        <input type="submit" value="Book Appointment">
+    </td>
+    <td>
+        <input type="reset" value="Clear">
+    </td>
+      </tr>
     </table>
 
 </form>
+    <script>
+let today = new Date().toISOString().split("T")[0];
+
+document.getElementById("appointmentDate").min = today;
+</script>
 </body>
