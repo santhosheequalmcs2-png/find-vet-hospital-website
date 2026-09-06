@@ -5,12 +5,36 @@
           Find Vet Doc-FVD
         </title>
     <link rel="icon" href="image -vd.jpeg"
-   </head>
+     </head>
+    <script>
+function searchDoctor() {
+    let search = document.getElementById("search").value.toLowerCase();
+
+    let doctors = document.querySelectorAll(".doctor");
+
+    doctors.forEach(function(doctor) {
+        let text = doctor.innerText.toLowerCase();
+
+        if (text.includes(search)) {
+            doctor.style.display = "block";
+        } else {
+            doctor.style.display = "none";
+        }
+    });
+}
+</script>
    <body bgcolor="beige"style="color:black">
 <center>
-  <h1>find vet doc</h1>
+  <h1>Find Vet Doc-FVD</h1>
 </center>
+    <center>
+  <input type="text" id="search" placeholder="Search doctor or hospital...">
+  <button onclick="searchDoctor()">Search</button>
+</center>
+
+<br>
 <hr>
+    <div class="doctor">
 <img src="image 1.jpeg" alt="vet doc" width="250" height="200">
 <table>
 <tr>
@@ -55,7 +79,7 @@
 <tr>
 <td>AGE:18</td>
 </tr>
-<tr><td>HOSPITAL:govrnment Veterinary Clinic</td></tr>
+<tr><td>HOSPITAL:Government Veterinary Clinic</td></tr>
   <tr><td><a href="https://www.instagram.com/i_am_nobody_2008?stkn=MWN4aGRrcjQ3MXBhaQ==">check in instagram</a></td></tr>
 <p>
     Medical Care: Examine pets and livestock, prescribe medications, and perform surgeries like spays, fractures, and tumor removals.Preventative Health: Administer vaccinations, deworming, and dental care to stop diseases before they start.Diagnostics: Use X-rays, ultrasounds, and blood tests to find injuries or illnesses.Public Health: Safeguard the human food supply, control zoonotic diseases that pass to humans, and work with government agencies like the CDC or USDA.
