@@ -4,9 +4,8 @@
         <title>
           Find Vet Doc-FVD
         </title>
-    <link rel="icon" href="image -vd.jpeg"
-     </head>
-    <script>
+    <link rel="icon" href="image -vd.jpeg">
+     <script>
 function searchDoctor() {
     let search = document.getElementById("search").value.toLowerCase();
 
@@ -23,16 +22,21 @@ function searchDoctor() {
     });
 }
 </script>
+     </head>
+   
    <body bgcolor="beige"style="color:black">
 <center>
   <h1>Find Vet Doc-FVD</h1>
 </center>
 <hr size="2%" color="black">
-<button " nav onclick="window.location.href='index.html'">🏠Home</button>
-<button  " nav onclick="window.location.href='booking1.html'">Book an Appointment</button>
-<button style="border-top-left-radius: 10px;margin-left: 85%; margin-right: 0.1%;" nav onclick="window.location.href='contact.html'">Contact Us</button>
-<button style="border-top-left-radius: 10px; " nav onclick="window.location.href='about.html'">About Us </button>
-    <center>
+<button onclick="window.location.href='index.html'">🏠Home</button>
+<button onclick="window.location.href='booking1.html'">Book an Appointment</button>
+<button  style="border-top-left-radius: 10px;margin-left: 85%; margin-right: 0.1%;margin-top: 1px;" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+    About Us
+</button>  
+<button id="contact"  onclick="window.location.href='contact.html'">Contact Us</button>
+
+  <center>
   <input type="text" id="search" placeholder="Search doctor or hospital...">
   <button onclick="searchDoctor()">Search</button>
 </center>
@@ -99,7 +103,7 @@ function searchDoctor() {
 <tr><td><a href="booking1.html">click here to book an appointment</a></td></tr>
 </table>
 </div>
-<h1 style="color: gray;background-color: black; ">About Us</h1>       
+<h1 id="about" style="color: gray;background-color: black;">About Us</h1>
 <p>FVD helps pets by making it easier for their owners to find the right veterinary doctor and get timely medical care. Through the website, pet owners can view information about veterinary doctors, hospitals, consultation fees, and available services before choosing a doctor. They can also book an appointment by providing basic details about their pet and its health problem. This can save time and make the process more organized, especially when a pet needs medical attention. By connecting pet owners with veterinary care more conveniently, FVD aims to support better healthcare and a healthier life for pets.
 Appointments help pet owners plan their visit to a veterinary doctor at a suitable time. By booking an appointment through FVD, owners can provide basic information about their pet and its health problem in advance. This helps make the consultation more organized and can reduce unnecessary waiting time at the clinic. It also helps pet owners choose a suitable doctor based on their needs. Overall, the appointment feature makes the process of getting veterinary care easier, more convenient, and better organized for both pet owners and veterinary clinics.
 
