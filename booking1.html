@@ -5,7 +5,84 @@
     <link rel="icon" href="image -vd.jpeg"
     </head>
 <body bgcolor="skyblue"style="color:darkblue">
-   <center> <form>
+   <center> <form> <head>
+        <title>
+          appointment page
+        </title>
+    <link rel="icon" href="image -vd.jpeg"
+    </head>
+<body bgcolor="skyblue"style="color:darkblue">
+   <center> 
+    <h1>Book an Appointment</h1>
+    <hr size="2%" color="black">
+    <form>
+        <table>
+        <tr>
+                <td>NAME:</td> <td><input type="text" placeholder="Enter your name" required></td>
+        </tr>        
+                <td>AGE:</td><td><input type="number" placeholder="age" min="1" max="99" required ></td>
+        </tr>
+        <tr>
+            <td>GENDER  :
+  <td>
+ <select>
+
+            <option value="">Select gender</option>
+            <option>Male</option>
+            <option>Female</option>
+ 
+           
+        </select> 
+  </td>
+        </tr>
+        <tr> 
+            <td>PHONE NUMBER:</td><td><input type="tel" placeholder="Enter your phone number" maxlength="10"required></td>
+        </tr>
+            <tr>
+    <td>PET NAME:</td>
+    <td><input type="text" placeholder="Enter your pet name"required></td>
+</tr>
+
+<tr>
+    <td>PET TYPE:</td>
+    <td>
+        <select>
+            <option value="">Select pet</option>
+            <option>Dog</option>
+            <option>Cat</option>
+            <option>Cow</option>
+            <option>Other</option>
+        </select>
+    </td>
+</tr>
+            <tr>
+    <td>PET PROBLEM:</td>
+    <td>
+        <textarea placeholder="Enter your pet's problem"required></textarea>
+    </td>
+</tr>
+        <tr>
+            <td>APPOINTMENT DATE:</td><td><input type="date"  id="appointmentDate"required></td>
+        </tr>
+       <tr>
+    <td>
+        <input type="submit" value="Book Appointment">
+    </td>
+    <td>
+        <input type="reset" value="Clear">
+    </td>
+      </tr>
+    </table>
+
+</form>
+    </center>
+    <script>
+let today = new Date().toISOString().split("T")[0];
+
+document.getElementById("appointmentDate").min = today;
+</script>
+<button nav onclick="window.location.href='index.html'">←—Go back</button>
+</body>
         <table>
         <tr>
                 <td>NAME:</td> <td><input type="text" placeholder="Enter your name" required></td>
