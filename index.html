@@ -1,148 +1,235 @@
-<!DOCTYPE html>
- <html>
-   <head>
-        <title>
-          Find Vet Doc-FVD
-        </title>
-    <link rel="icon" href="image -vd.jpeg">
-     <script>
-function searchDoctor() {
-    let search = document.getElementById("search").value.toLowerCase();
+<!doctype html>
+<html>
+  <head>
+    <title> </title>
+    <link rel="icon" href="image -vd.jpeg" />
+    <script>
+      function searchDoctor() {
+        let search = document.getElementById("search").value.toLowerCase();
 
-    let doctors = document.querySelectorAll(".doctor");
+        let doctors = document.querySelectorAll(".doctor");
 
-    doctors.forEach(function(doctor) {
-        let text = doctor.innerText.toLowerCase();
+        doctors.forEach(function (doctor) {
+          let text = doctor.innerText.toLowerCase();
 
-        if (text.includes(search)) {
+          if (text.includes(search)) {
             doctor.style.display = "block";
-        } else {
+          } else {
             doctor.style.display = "none";
+          }
+        });
+      }
+    </script>
+    <style>
+
+
+         .veterinary-world {
+          text-align: center;
+          padding: 0;
+          margin: 0;
+      }
+
+      .veterinary-world h1 {
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+
+      #three-container {
+          width: 100%;
+          height: 450px;
+          margin-left: 185px;
+          margin-bottom: 0;
+          overflow: hidden;
+      }
+      
+
+        #three-container canvas {
+          display: block;
+          width: 100%;
+          height: 100%;
         }
-    });
-}
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </style>
+  </head>
 
-<style>
-    @media (max-width: 768px) {
-        body {
-            margin: 0;
-            padding: 10px;
-            overflow-x: hidden;
-        }
+  <body bgcolor="beige" style="color: black">
+    <center>
+      <h1>Find Vet Doc-FVD</h1>
+    </center>
+    <hr size="2%" color="black" />
+    <button onclick="window.location.href = 'booking1.html'">
+      Book an Appointment
+    </button>
+    <button
+      style="border-top-left-radius: 10px; margin-left: 79%"
+      onclick="
+        document.getElementById('about').scrollIntoView({ behavior: 'smooth' })
+      "
+    >
+      About Us
+    </button>
+    <button
+      style="border-top-left-radius: 10px"
+      onclick="
+        document
+          .getElementById('contact')
+          .scrollIntoView({ behavior: 'smooth' })
+      "
+    >
+      Contact Us
+    </button>
 
-        img {
-            max-width: 100%;
-            height: auto;
-        }
+    <center>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search doctor or hospital..."
+      />
+      <button onclick="searchDoctor()">Search</button>
+    </center>
 
-        h1 {
-            font-size: 28px;
-        }
-
-        table {
-            max-width: 100%;
-            overflow-x: auto;
-        }
-    }
-</style>
-     </head>
-   
-   <body bgcolor="beige"style="color:black">
-<center>
-  <h1>Find Vet Doc-FVD</h1>
-</center>
-<hr size="2%" color="black">
-<button  onclick="window.location.href='booking1.html'">Book an Appointment</button>
-<button  style="border-top-left-radius: 10px;margin-left:50%; hover= colour: White " onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
-    About Us
-</button>  
-<button style="border-top-left-radius: 10px;"  onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
-    Contact Us</button>
-
-  <center>
-  <input type="text" id="search" placeholder="Search doctor or hospital...">
-  <button onclick="searchDoctor()">Search</button>
-</center>
-
-<br>
-<hr>
+    <br />
+    <hr />
     <div class="doctor">
-<img src="image 1.jpeg" alt="vet doc" width="250" height="200">
-<table>
-<tr>
-  <td>NAME:Nina MBBS..,</td> 
-</tr>
-<tr>
-<td>AGE:17</td>
-</tr>
-<tr><td>HOSPITAL:City Veterinary Clinic</td></tr>
-<p>
-    Medical Care: Examine pets and livestock, prescribe medications, and perform surgeries like spays, fractures, and tumor removals.Preventative Health: Administer vaccinations, deworming, and dental care to stop diseases before they start.Diagnostics: Use X-rays, ultrasounds, and blood tests to find injuries or illnesses.Public Health: Safeguard the human food supply, control zoonotic diseases that pass to humans, and work with government agencies like the CDC or USDA.
-</p>
-<tr>
-  <td>FEES: 5000</td>
-</tr>
-<tr><td><a href="booking1.html">click here to book an appointment</a></td></tr>
-</table>
-</div>
-<hr>
-      <div class="doctor">
- <h1>THE BEST DOCTOR</h1>
-       <img src="imxzxZZ.jpeg" alt="vet doc" width="200" height="200">
-<table>
-<tr>
-  <td>NAME:B SURYA MBBS..,</td> 
-</tr>
-<tr>
-<td>AGE:17</td>
-</tr>
-<tr><td>HOSPITAL:VILLAGE Veterinary Clinic</td></tr>
-<p>
-    Medical Care: Examine pets and livestock, prescribe medications, and perform surgeries like spays, fractures, and tumor removals.Preventative Health: Administer vaccinations, deworming, and dental care to stop diseases before they start.Diagnostics: Use X-rays, ultrasounds, and blood tests to find injuries or illnesses.Public Health: Safeguard the human food supply, control zoonotic diseases that pass to humans, and work with government agencies like the CDC or USDA.
-</p>
-<tr>
-  <td>FEES: 5702</td>
-</tr>
-<tr><td><a href="booking1.html">click here to book an appointment</a></td></tr>
-</table>
-</div>
-<hr>
-        <div class="doctor">
-    <img src="image sss.jpeg" alt="vet doc" width="200" height="200">
-<table>
-<tr>
-  <td>NAME:lacky MBBS..,</td> 
-</tr>
-<tr>
-<td>AGE:18</td>
-</tr>
-<tr><td>HOSPITAL:Government Veterinary Clinic</td></tr>
-<p>
-    Medical Care: Examine pets and livestock, prescribe medications, and perform surgeries like spays, fractures, and tumor removals.Preventative Health: Administer vaccinations, deworming, and dental care to stop diseases before they start.Diagnostics: Use X-rays, ultrasounds, and blood tests to find injuries or illnesses.Public Health: Safeguard the human food supply, control zoonotic diseases that pass to humans, and work with government agencies like the CDC or USDA.
-</p>
-<tr>
-  <td>FEES: 6688</td>
-</tr>
-<tr><td><a href="booking1.html">click here to book an appointment</a></td></tr>
-</table>
-</div>
-<h1 id="about" style="color: gray;background-color: black;">About Us</h1>
-<p>FVD helps pets by making it easier for their owners to find the right veterinary doctor and get timely medical care. Through the website, pet owners can view information about veterinary doctors, hospitals, consultation fees, and available services before choosing a doctor. They can also book an appointment by providing basic details about their pet and its health problem. This can save time and make the process more organized, especially when a pet needs medical attention. By connecting pet owners with veterinary care more conveniently, FVD aims to support better healthcare and a healthier life for pets.
-Appointments help pet owners plan their visit to a veterinary doctor at a suitable time. By booking an appointment through FVD, owners can provide basic information about their pet and its health problem in advance. This helps make the consultation more organized and can reduce unnecessary waiting time at the clinic. It also helps pet owners choose a suitable doctor based on their needs. Overall, the appointment feature makes the process of getting veterinary care easier, more convenient, and better organized for both pet owners and veterinary clinics.
+      <img src="image 1.jpeg" alt="vet doc" width="250" height="200" />
+      <table>
+        <tr>
+          <td>NAME:Nina MBBS..,</td>
+        </tr>
+        <tr>
+          <td>AGE:37</td>
+        </tr>
+        <tr>
+          <td>HOSPITAL:City Veterinary Clinic</td>
+        </tr>
+        <p>
+          Medical Care: Examine pets and livestock, prescribe medications, and
+          perform surgeries like spays, fractures, and tumor
+          removals.Preventative Health: Administer vaccinations, deworming, and
+          dental care to stop diseases before they start.Diagnostics: Use
+          X-rays, ultrasounds, and blood tests to find injuries or
+          illnesses.Public Health: Safeguard the human food supply, control
+          zoonotic diseases that pass to humans, and work with government
+          agencies like the CDC or USDA.
+        </p>
+        <tr>
+          <td>FEES: 5000</td>
+        </tr>
+        <tr>
+          <td><a href="booking1.html">click here to book an appointment</a></td>
+        </tr>
+      </table>
+    </div>
+    <hr />
+    <div class="doctor">
+      <h1>THE BEST DOCTOR</h1>
+      <img src="imxzxZZ.jpeg" alt="vet doc" width="200" height="200" />
+      <table>
+        <tr>
+          <td>NAME:B SURYA MBBS..,</td>
+        </tr>
+        <tr>
+          <td>AGE:25</td>
+        </tr>
+        <tr>
+          <td>HOSPITAL:VILLAGE Veterinary Clinic</td>
+        </tr>
+        <p>
+          Medical Care: Examine pets and livestock, prescribe medications, and
+          perform surgeries like spays, fractures, and tumor
+          removals.Preventative Health: Administer vaccinations, deworming, and
+          dental care to stop diseases before they start.Diagnostics: Use
+          X-rays, ultrasounds, and blood tests to find injuries or
+          illnesses.Public Health: Safeguard the human food supply, control
+          zoonotic diseases that pass to humans, and work with government
+          agencies like the CDC or USDA.
+        </p>
+        <tr>
+          <td>FEES: 5702</td>
+        </tr>
+        <tr>
+          <td><a href="booking1.html">click here to book an appointment</a></td>
+        </tr>
+      </table>
+    </div>
+    <hr />
+    <div class="doctor">
+      <img src="image sss.jpeg" alt="vet doc" width="200" height="200" />
+      <table>
+        <tr>
+          <td>NAME:lacky MBBS..,</td>
+        </tr>
+        <tr>
+          <td>AGE:42</td>
+        </tr>
+        <tr>
+          <td>HOSPITAL:Government Veterinary Clinic</td>
+        </tr>
+        <p>
+          Medical Care: Examine pets and livestock, prescribe medications, and
+          perform surgeries like spays, fractures, and tumor
+          removals.Preventative Health: Administer vaccinations, deworming, and
+          dental care to stop diseases before they start.Diagnostics: Use
+          X-rays, ultrasounds, and blood tests to find injuries or
+          illnesses.Public Health: Safeguard the human food supply, control
+          zoonotic diseases that pass to humans, and work with government
+          agencies like the CDC or USDA.
+        </p>
+        <tr>
+          <td>FEES: 6688</td>
+        </tr>
+        <tr>
+          <td><a href="booking1.html">click here to book an appointment</a></td>
+        </tr>
+      </table>
+    </div>
+    <section style="text-align: center; padding: 20px">
+      <h1>Explore Our Veterinary World</h1>
 
-</p>  
-<h1 id="contact" style="color: gray;background-color: black;">Contact Us</h1><p>
-    If you have any questions or need assistance, feel free to reach out to us:
-</p>
-<ul>
-    <li>Email: info@findvetdoc.com</li>
-    <li>Phone: +1 (123) 456-7890</li>
-    <li>Address: 123 Veterinary Street, Animal City</li>
-</ul>
-<center>
-<button onclick="window.location.href='index.html'">🏠Home</button>
-</center>
-</body>
- </html>
+      <div id="three-container"></div>
+    </section>
+    <h1 id="about" style="color: gray; background-color: black">About Us</h1>
+    <p>
+      FVD helps pets by making it easier for their owners to find the right
+      veterinary doctor and get timely medical care. Through the website, pet
+      owners can view information about veterinary doctors, hospitals,
+      consultation fees, and available services before choosing a doctor. They
+      can also book an appointment by providing basic details about their pet
+      and its health problem. This can save time and make the process more
+      organized, especially when a pet needs medical attention. By connecting
+      pet owners with veterinary care more conveniently, FVD aims to support
+      better healthcare and a healthier life for pets. Appointments help pet
+      owners plan their visit to a veterinary doctor at a suitable time. By
+      booking an appointment through FVD, owners can provide basic information
+      about their pet and its health problem in advance. This helps make the
+      consultation more organized and can reduce unnecessary waiting time at the
+      clinic. It also helps pet owners choose a suitable doctor based on their
+      needs. Overall, the appointment feature makes the process of getting
+      veterinary care easier, more convenient, and better organized for both pet
+      owners and veterinary clinics.
+    </p>
+    <h1 id="contact" style="color: gray; background-color: black">
+      Contact Us
+    </h1>
+    <p>
+      If you have any questions or need assistance, feel free to reach out to
+      us:
+    </p>
+    <ul>
+      <li>Email: info@findvetdoc.com</li>
+      <li>Phone: +1 (123) 456-7890</li>
+      <li>Address: 123 Veterinary Street, Animal City</li>
+    </ul>
+    <center>
+      <button onclick="window.location.href = 'index.html'">🏠Home</button>
+    </center>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="three.js"></script>
+  </body>
+</html>
