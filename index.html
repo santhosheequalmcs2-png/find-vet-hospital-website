@@ -21,7 +21,39 @@
       }
     </script>
     <style>
+.treatments {
+    text-align: center;
+    padding: 35px 20px;
+    margin: 20px 10px;
+}
 
+.treatments h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.treatment-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.treatment-card {
+    background: white;
+    width: 210px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.treatment-card h2 {
+    font-size: 20px;
+}
+
+.treatment-card p {
+    font-size: 16px;
+}
 
          .veterinary-world {
           text-align: center;
@@ -36,7 +68,7 @@
 
       #three-container {
           width: 100%;
-          height: 450px;
+          height: 200px;
           margin-left: 185px;
           margin-bottom: 0;
           overflow: hidden;
@@ -49,6 +81,7 @@
           height: 100%;
         }
     </style>
+            
   </head>
 
   <body bgcolor="beige" style="color: black">
@@ -187,6 +220,38 @@
 
       <div id="three-container"></div>
     </section>
+    <section class="treatments">
+    <h1>Available Treatments</h1>
+
+    <div class="treatment-container">
+
+        <div class="treatment-card">
+            <h2>🩺 General Checkup</h2>
+            <p>Regular health checkups to keep animals healthy.</p>
+        </div>
+
+        <div class="treatment-card">
+            <h2>💉 Vaccination</h2>
+            <p>Vaccination services to protect animals from diseases.</p>
+        </div>
+
+        <div class="treatment-card">
+            <h2>🐾 Deworming</h2>
+            <p>Treatment to protect pets from intestinal parasites.</p>
+        </div>
+
+        <div class="treatment-card">
+            <h2>🐕 Skin Treatment</h2>
+            <p>Care for common skin problems and infections.</p>
+        </div>
+
+        <div class="treatment-card">
+            <h2>🚑 Emergency Care</h2>
+            <p>Veterinary attention for urgent health problems.</p>
+        </div>
+
+    </div>
+</section>
     <h1 id="about" style="color: gray; background-color: black">About Us</h1>
     <p>
       FVD helps pets by making it easier for their owners to find the right
