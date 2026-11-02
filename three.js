@@ -83,7 +83,6 @@ function loadAnimal(path, name, xPosition) {
       animal.position.y += 3.5;
 
 scene.add(animal);
-      scene.add(animal);
 
       if (name === "Dog") {
         dog1 = animal;
@@ -115,7 +114,7 @@ loadAnimal("./models/dog1.glb", "Dog", -1.8);
 // Load Cat on right
 loadAnimal("./models/Cat_black_white.glb", "Cat", 1);
 // Load Cow on right
-loadAnimal("./models/Cow.glb", "Cow", 4.4);
+loadAnimal("./models/cow.glb", "Cow", 4.4);
 // Load Sparrow on right
 loadAnimal("./models/Sparrow.glb", "Sparrow", 7.8);
 // Load Horse on right
